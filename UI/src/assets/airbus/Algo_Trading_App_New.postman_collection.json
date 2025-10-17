@@ -1,0 +1,525 @@
+{
+	"info": {
+		"_postman_id": "49ae41fe-6fca-4ce2-9675-ed4e8986e44f",
+		"name": "Algo_Trading_App_New",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27345320",
+		"_collection_link": "https://winter-shadow-880320.postman.co/workspace/My-Workspace~8a03f0ae-32c6-4ff8-8113-081eea4321f3/collection/27285395-49ae41fe-6fca-4ce2-9675-ed4e8986e44f?action=share&source=collection_link&creator=27345320"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Venkat\",\r\n    \"userContactNumber\": \"+918125889944\",\r\n    \"userPassword\": \"Venkat\",\r\n    \"userEmail\": \"Venkat@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/create_user/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"create_user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User based on UserId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/get_user/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"get_user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/get_users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"get_users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit user based on UserId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"userId\": 1,\r\n        \"userName\": \"Subu\",\r\n        \"userContactNumber\": \"+919998887776\",\r\n        \"userPassword\" : \"Subu\",\r\n        \"userEmail\": \"subu@gmail.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/edit_user/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"edit_user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user based on UserId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/delete_user/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"delete_user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Basket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"basketName\": \"Basket2\",\r\n    \"userId\": 1,\r\n    \"deployed\": false,\r\n    \"shared\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/create_basket/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"create_basket",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get basked based on UserId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/get_baskets/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"get_baskets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update basked based on BasketId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"basketId\": 2,\r\n        \"basketName\": \"Basket2\",\r\n        \"userId\": 1,\r\n        \"deployed\": true,\r\n        \"shared\": false\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/edit_basket/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"edit_basket",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete basked based on basketId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/delete_basket/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"delete_basket",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create strategy, strategyCondition, legs and legCondition",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"strategy\": {\r\n        \"basketId\": 3,\r\n        \"strategyName\": \"Strategytest5\",\r\n        \"strategyShortDescription\" : \"short description\",\r\n        \"strategyLongDescription\" : \"long description\",\r\n        \"index\": \"NIFTY\",\r\n        \"segment\": \"OPTIONS\",\r\n        \"orderType\": \"MIS\",\r\n        \"strategyCondition\": [\r\n            {\r\n                \"type\": \"ENTRY\",\r\n                \"conditionType\": \"DAY_OF_WEEK\",\r\n                \"configuration\": \"Monday, Tuesday, Wednesday\",\r\n                \"strategyType\": \"INTRADAY\"\r\n            },\r\n            {\r\n                \"type\": \"ENTRY\",\r\n                \"conditionType\": \"EXIT_DATE\",\r\n                \"configuration\": \"12-10-2023\",\r\n                \"strategyType\": \"INTRADAY\"\r\n            }\r\n        ],\r\n        \"legs\": [\r\n            {\r\n                \"legOrderType\": \"CE\",\r\n                \"tradeType\": \"SELL\",\r\n                \"expiryDate\": \"9999-12-31\",\r\n                \"legCondition\": \"ATM_POINT\",\r\n                \"spotOrFutures\": \"SPOT\",\r\n                \"reEntryOrReExecute\": \"RE_ENTRY\",\r\n                \"strikePrice\": \"ATM\",\r\n                \"totalLots\": 1,\r\n                \"legConditions\": [\r\n                    {\r\n                        \"legType\": \"ENTRY\",\r\n                        \"legConditionType\": \"TARGET_PROFIT\",\r\n                        \"legConfiguration\": \"12\"\r\n                    },\r\n                    {\r\n                        \"legType\": \"EXIT\",\r\n                        \"legConditionType\": \"TARGET_PROFIT\",\r\n                        \"legConfiguration\": \"10\"\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"legOrderType\": \"PE\",\r\n                \"tradeType\": \"BUY\",\r\n                \"expiryDate\": \"9999-12-31\",\r\n                \"legCondition\": \"ATM_POINT\",\r\n                \"spotOrFutures\": \"FUTURES\",\r\n                \"reEntryOrReExecute\": \"RE_ENTRY\",\r\n                \"strikePrice\": \"ATM\",\r\n                \"totalLots\": 10,\r\n                \"legConditions\": [\r\n                    {\r\n                        \"legType\": \"ENTRY\",\r\n                        \"legConditionType\": \"STOP_LOSS\",\r\n                        \"legConfiguration\": \"1\"\r\n                    },\r\n                    {\r\n                        \"legType\": \"EXIT\",\r\n                        \"legConditionType\": \"STOP_LOSS\",\r\n                        \"legConfiguration\": \"100\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/create_strategy_leg/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"create_strategy_leg",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get strategy, strategyCondition, leg and legCondition based on strategyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/get_strategy_leg/17",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"get_strategy_leg",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get strategy, strategyCondition, legs and legConditions based on basketId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/get_strategy_leg_bId/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"get_strategy_leg_bId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update strategy, strategyCondition, legs and legCondition based on strategyId",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"strategy\": {\r\n        \"strategyId\": 17,\r\n        \"is_deleted\": false,\r\n        \"strategyName\": \"Strategytest4\",\r\n        \"strategyShortDescription\" : \"short description\",\r\n        \"strategyLongDescription\" : \"long description\",\r\n        \"index\": \"FINNIFTY\",\r\n        \"segment\": \"OPTIONS\",\r\n        \"orderType\": \"MIS\",\r\n        \"createdAt\": \"2023-09-06T02:37:47.737301Z\",\r\n        \"updatedAt\": \"2023-09-06T02:37:47.737301Z\",\r\n        \"basketId\": 3,\r\n        \"strategyCondition\": [\r\n            {\r\n                \"strategyConditionId\": 17,\r\n                \"is_deleted\": false,\r\n                \"type\": \"ENTRY\",\r\n                \"conditionType\": \"DAY_OF_WEEK\",\r\n                \"configuration\": \"Monday, Tuesday, Wednesday\",\r\n                \"strategyType\": \"INTRADAY\",\r\n                \"createdAt\": \"2023-09-06T02:37:47.749802Z\",\r\n                \"updatedAt\": \"2023-09-06T02:37:47.749802Z\",\r\n                \"strategyId\": 17\r\n            },\r\n            {\r\n                \"strategyConditionId\": 18,\r\n                \"is_deleted\": false,\r\n                \"type\": \"ENTRY\",\r\n                \"conditionType\": \"EXIT_DATE\",\r\n                \"configuration\": \"12-10-2023\",\r\n                \"strategyType\": \"INTRADAY\",\r\n                \"createdAt\": \"2023-09-06T02:37:47.758212Z\",\r\n                \"updatedAt\": \"2023-09-06T02:37:47.758212Z\",\r\n                \"strategyId\": 17\r\n            }\r\n        ],\r\n        \"legs\": [\r\n            {\r\n                \"legId\": 21,\r\n                \"is_deleted\": false,\r\n                \"legOrderType\": \"CE\",\r\n                \"tradeType\": \"SELL\",\r\n                \"expiryDate\": \"9999-12-31T00:00:00Z\",\r\n                \"legCondition\": \"ATM_POINT\",\r\n                \"spotOrFutures\": \"SPOT\",\r\n                \"reEntryOrReExecute\": \"RE_ENTRY\",\r\n                \"strikePrice\": \"ATM\",\r\n                \"totalLots\": 1,\r\n                \"createdAt\": \"2023-09-06T02:37:47.772130Z\",\r\n                \"updatedAt\": \"2023-09-06T02:37:47.772130Z\",\r\n                \"strategyId\": 17,\r\n                \"legConditions\": [\r\n                    {\r\n                        \"legConditionId\": 10,\r\n                        \"is_deleted\": false,\r\n                        \"legType\": \"ENTRY\",\r\n                        \"legConditionType\": \"TARGET_PROFIT\",\r\n                        \"legConfiguration\": \"12\",\r\n                        \"createdAt\": \"2023-09-06T02:37:47.783111Z\",\r\n                        \"updatedAt\": \"2023-09-06T02:37:47.783111Z\",\r\n                        \"legId\": 21\r\n                    },\r\n                    {\r\n                        \"legConditionId\": 11,\r\n                        \"is_deleted\": false,\r\n                        \"legType\": \"EXIT\",\r\n                        \"legConditionType\": \"TARGET_PROFIT\",\r\n                        \"legConfiguration\": \"10\",\r\n                        \"createdAt\": \"2023-09-06T02:37:47.791083Z\",\r\n                        \"updatedAt\": \"2023-09-06T02:37:47.791083Z\",\r\n                        \"legId\": 21\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                \"legId\": 22,\r\n                \"is_deleted\": false,\r\n                \"legOrderType\": \"PE\",\r\n                \"tradeType\": \"BUY\",\r\n                \"expiryDate\": \"9999-12-31T00:00:00Z\",\r\n                \"legCondition\": \"ATM_POINT\",\r\n                \"spotOrFutures\": \"FUTURES\",\r\n                \"reEntryOrReExecute\": \"RE_ENTRY\",\r\n                \"strikePrice\": \"ATM\",\r\n                \"totalLots\": 10,\r\n                \"createdAt\": \"2023-09-06T02:37:47.800078Z\",\r\n                \"updatedAt\": \"2023-09-06T02:37:47.800078Z\",\r\n                \"strategyId\": 17,\r\n                \"legConditions\": [\r\n                    {\r\n                        \"legConditionId\": 12,\r\n                        \"is_deleted\": false,\r\n                        \"legType\": \"ENTRY\",\r\n                        \"legConditionType\": \"STOP_LOSS\",\r\n                        \"legConfiguration\": \"1\",\r\n                        \"createdAt\": \"2023-09-06T02:37:47.809077Z\",\r\n                        \"updatedAt\": \"2023-09-06T02:37:47.809077Z\",\r\n                        \"legId\": 22\r\n                    },\r\n                    {\r\n                        \"legConditionId\": 13,\r\n                        \"is_deleted\": false,\r\n                        \"legType\": \"EXIT\",\r\n                        \"legConditionType\": \"STOP_LOSS\",\r\n                        \"legConfiguration\": \"1000000\",\r\n                        \"createdAt\": \"2023-09-06T02:37:47.818817Z\",\r\n                        \"updatedAt\": \"2023-09-06T02:37:47.818817Z\",\r\n                        \"legId\": 22\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/edit_strategy_leg/17",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"edit_strategy_leg",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete strategy, strategyCondition, legs, letCondition based on strategyId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/delete_strategy_leg/15",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"delete_strategy_leg",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete multiple legs and its legCondition using POST API call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deleteLegs\" : [15, 16]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/create_strategy_leg/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"create_strategy_leg",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a particular leg using legId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/delete_leg/16",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"delete_leg",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a leg w/wo legCondition for a strategy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"legs\": [\r\n        {\r\n            \"strategyId\" : 14,\r\n            \"legOrderType\": \"CE\",\r\n            \"tradeType\": \"SELL\",\r\n            \"expiryDate\": \"9999-12-31\",\r\n            \"legCondition\": \"ATM_POINT\",\r\n            \"spotOrFutures\": \"SPOT\",\r\n            \"reEntryOrReExecute\": \"RE_ENTRY\",\r\n            \"strikePrice\": \"ATM\",\r\n            \"totalLots\": 1,\r\n            \"legConditions\": [\r\n                {\r\n                    \"legType\": \"ENTRY\",\r\n                    \"legConditionType\": \"TARGET_PROFIT\",\r\n                    \"legConfiguration\": \"12\"\r\n                },\r\n                {\r\n                    \"legType\": \"EXIT\",\r\n                    \"legConditionType\": \"TARGET_PROFIT\",\r\n                    \"legConfiguration\": \"10\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/algoTradingApp/strategy/builder/create_leg/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"algoTradingApp",
+						"strategy",
+						"builder",
+						"create_leg",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

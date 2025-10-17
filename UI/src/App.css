@@ -1,0 +1,58 @@
+.first-letter-big::first-letter {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: serif;
+    padding-left: 2%;
+}
+
+/* .first-letter-big::first-line{
+    margin-left: '200px';
+} */
+/* CSS */
+.button-50 {
+    appearance: button;
+    background-color: #519534;
+    background-image: none;
+    border: 1px solid #519534;
+    border-radius: 4px;
+    box-shadow: -4px 4px 0 0 #0a1e26,
+        -5px 5px 0 0 #519534;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button-50:focus {
+    text-decoration: none;
+}
+
+.button-50:hover {
+    text-decoration: none;
+}
+
+.button-50:active {
+    box-shadow: -3px 3px 0 0 #0a1e26, -4px 4px 0 0 #519534;
+    outline: 0;
+    transform: translate(-2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-50 {
+        padding: 12px 50px;
+    }
+}

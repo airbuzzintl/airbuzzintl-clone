@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+# Add the location of your sitemap (replace with the correct URL)
+Sitemap: https://www.airbuzzintl.com/sitemap.xml
